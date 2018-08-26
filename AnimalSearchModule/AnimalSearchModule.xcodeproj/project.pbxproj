@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		F42EDB08213357BA0093842D /* AnimalSearchModule.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42EDAFE213357BA0093842D /* AnimalSearchModule.framework */; };
 		F42EDB0F213357BA0093842D /* AnimalSearchModule.h in Headers */ = {isa = PBXBuildFile; fileRef = F42EDB01213357BA0093842D /* AnimalSearchModule.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F42EDB2921335A330093842D /* AnimalData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42EDB2521335A140093842D /* AnimalData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -19,6 +20,20 @@
 			remoteGlobalIDString = F42EDAFD213357BA0093842D;
 			remoteInfo = AnimalSearchModule;
 		};
+		F42EDB2421335A140093842D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42EDB1F21335A140093842D /* AnimalData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F42EDACF213350ED0093842D;
+			remoteInfo = AnimalData;
+		};
+		F42EDB2621335A140093842D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F42EDB1F21335A140093842D /* AnimalData.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F42EDAD8213350ED0093842D;
+			remoteInfo = AnimalDataTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +42,7 @@
 		F42EDB02213357BA0093842D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F42EDB07213357BA0093842D /* AnimalSearchModuleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimalSearchModuleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F42EDB0E213357BA0093842D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F42EDB1F21335A140093842D /* AnimalData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AnimalData.xcodeproj; path = ../Submodules/AnimalData/AnimalData/AnimalData.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +50,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F42EDB2921335A330093842D /* AnimalData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,9 +68,11 @@
 		F42EDAF4213357BA0093842D = {
 			isa = PBXGroup;
 			children = (
+				F42EDB1F21335A140093842D /* AnimalData.xcodeproj */,
 				F42EDB00213357BA0093842D /* AnimalSearchModule */,
 				F42EDB0B213357BA0093842D /* AnimalSearchModuleTests */,
 				F42EDAFF213357BA0093842D /* Products */,
+				F42EDB2821335A330093842D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,6 +100,22 @@
 				F42EDB0E213357BA0093842D /* Info.plist */,
 			);
 			path = AnimalSearchModuleTests;
+			sourceTree = "<group>";
+		};
+		F42EDB2021335A140093842D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F42EDB2521335A140093842D /* AnimalData.framework */,
+				F42EDB2721335A140093842D /* AnimalDataTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F42EDB2821335A330093842D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +198,12 @@
 			mainGroup = F42EDAF4213357BA0093842D;
 			productRefGroup = F42EDAFF213357BA0093842D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F42EDB2021335A140093842D /* Products */;
+					ProjectRef = F42EDB1F21335A140093842D /* AnimalData.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F42EDAFD213357BA0093842D /* AnimalSearchModule */,
@@ -170,6 +211,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F42EDB2521335A140093842D /* AnimalData.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AnimalData.framework;
+			remoteRef = F42EDB2421335A140093842D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F42EDB2721335A140093842D /* AnimalDataTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AnimalDataTests.xctest;
+			remoteRef = F42EDB2621335A140093842D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F42EDAFC213357BA0093842D /* Resources */ = {
