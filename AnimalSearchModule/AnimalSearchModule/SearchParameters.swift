@@ -7,7 +7,9 @@
 //
 
 import AnimalData
+import CoreLocation
 
 public protocol SearchParameters {
-    var species: Species { get }
+    var location: CLPlacemark { get }
+    var species: Species? { get }
 }
