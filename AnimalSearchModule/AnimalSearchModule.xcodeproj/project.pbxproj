@@ -12,6 +12,7 @@
 		F42EDB192133585A0093842D /* SearchParametersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB182133585A0093842D /* SearchParametersTests.swift */; };
 		F42EDB2921335A330093842D /* AnimalData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F42EDB2521335A140093842D /* AnimalData.framework */; };
 		F42EDB2B21335A670093842D /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB2A21335A670093842D /* SearchParameters.swift */; };
+		F42EDB2F21335C6A0093842D /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB2E21335C6A0093842D /* SearchService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		F42EDB182133585A0093842D /* SearchParametersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParametersTests.swift; sourceTree = "<group>"; };
 		F42EDB1F21335A140093842D /* AnimalData.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AnimalData.xcodeproj; path = ../Submodules/AnimalData/AnimalData/AnimalData.xcodeproj; sourceTree = "<group>"; };
 		F42EDB2A21335A670093842D /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
+		F42EDB2E21335C6A0093842D /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 				F42EDB01213357BA0093842D /* AnimalSearchModule.h */,
 				F42EDB02213357BA0093842D /* Info.plist */,
 				F42EDB2A21335A670093842D /* SearchParameters.swift */,
+				F42EDB2E21335C6A0093842D /* SearchService.swift */,
 			);
 			path = AnimalSearchModule;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F42EDB2B21335A670093842D /* SearchParameters.swift in Sources */,
+				F42EDB2F21335C6A0093842D /* SearchService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
