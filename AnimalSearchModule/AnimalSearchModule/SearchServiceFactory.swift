@@ -8,6 +8,9 @@
 
 import Foundation
 
-protocol SearchServiceFactory {
-    func createService() -> SearchService
+public protocol SearchServiceFactory: class {
+    func createService(
+        parameters: SearchParameters,
+        pageSize: Int
+    ) -> SearchService
 }
