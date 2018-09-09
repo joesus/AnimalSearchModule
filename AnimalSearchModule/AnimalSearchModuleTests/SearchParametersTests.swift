@@ -8,26 +8,30 @@
 
 import AnimalSearchModule
 import AnimalData
-import CoreLocation
 import XCTest
-
-struct SampleSearchParameters: SearchParameters {
-    let location: CLPlacemark
-    let species: Species?
-}
 
 class SearchParametersTests: XCTestCase {
 
-    let sampleSearchParameters: SearchParameters = SampleSearchParameters(
-        location: SamplePlacemarks.denver,
-        species: .dog
-    )
+    let zipCode = ZipCode(rawValue: "80220")!
+    var parameters: SearchParameters!
+
+    override func setUp() {
+        super.setUp()
+
+        parameters = SearchParameters(
+            zipCode: zipCode,
+            species: .dog
+        )
+    }
 
     func testSpecies() {
-        XCTAssertEqual(sampleSearchParameters.location, SamplePlacemarks.denver,
-                       "Search parameters interface requires a location")
-        XCTAssertEqual(sampleSearchParameters.species, .dog,
+        XCTAssertEqual(parameters.species, .dog,
                        "Search parameters interface requires a species")
+    }
+
+    func testZipCode() {
+        XCTAssertEqual(parameters.zipCode, zipCode,
+                       "Search parameters require a zip code")
     }
 
 }

@@ -7,9 +7,13 @@
 //
 
 import AnimalData
-import CoreLocation
 
-public protocol SearchParameters {
-    var location: CLPlacemark { get }
-    var species: Species? { get }
+public struct SearchParameters {
+    public let zipCode: ZipCode
+    public let species: Species?
+
+    public init(zipCode: ZipCode, species: Species) {
+        self.zipCode = zipCode
+        self.species = species
+    }
 }
