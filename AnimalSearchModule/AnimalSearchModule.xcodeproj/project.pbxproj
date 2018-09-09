@@ -14,8 +14,6 @@
 		F42EDB2B21335A670093842D /* SearchParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB2A21335A670093842D /* SearchParameters.swift */; };
 		F42EDB2F21335C6A0093842D /* SearchService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB2E21335C6A0093842D /* SearchService.swift */; };
 		F42EDB31213361A90093842D /* SearchServiceFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB30213361A90093842D /* SearchServiceFactory.swift */; };
-		F42EDB5F2133692D0093842D /* SamplePlacemarks.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42EDB5D2133692D0093842D /* SamplePlacemarks.swift */; };
-		F42EDB612133695A0093842D /* DenverPlacemark in Resources */ = {isa = PBXBuildFile; fileRef = F42EDB602133695A0093842D /* DenverPlacemark */; };
 		F4E57B3F2145B70F00B4D5B3 /* ZipCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E57B3E2145B70F00B4D5B3 /* ZipCodeTests.swift */; };
 		F4E57B412145B75C00B4D5B3 /* ZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E57B402145B75C00B4D5B3 /* ZipCode.swift */; };
 /* End PBXBuildFile section */
@@ -55,8 +53,6 @@
 		F42EDB2A21335A670093842D /* SearchParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchParameters.swift; sourceTree = "<group>"; };
 		F42EDB2E21335C6A0093842D /* SearchService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchService.swift; sourceTree = "<group>"; };
 		F42EDB30213361A90093842D /* SearchServiceFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchServiceFactory.swift; sourceTree = "<group>"; };
-		F42EDB5D2133692D0093842D /* SamplePlacemarks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SamplePlacemarks.swift; sourceTree = "<group>"; };
-		F42EDB602133695A0093842D /* DenverPlacemark */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = DenverPlacemark; sourceTree = "<group>"; };
 		F4E57B3E2145B70F00B4D5B3 /* ZipCodeTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCodeTests.swift; sourceTree = "<group>"; };
 		F4E57B402145B75C00B4D5B3 /* ZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCode.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,8 +113,6 @@
 		F42EDB0B213357BA0093842D /* AnimalSearchModuleTests */ = {
 			isa = PBXGroup;
 			children = (
-				F42EDB592133691B0093842D /* SampleData */,
-				F42EDB182133585A0093842D /* SearchParametersTests.swift */,
 				F42EDB0E213357BA0093842D /* Info.plist */,
 				F4E57B3E2145B70F00B4D5B3 /* ZipCodeTests.swift */,
 			);
@@ -139,15 +133,6 @@
 			children = (
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F42EDB592133691B0093842D /* SampleData */ = {
-			isa = PBXGroup;
-			children = (
-				F42EDB602133695A0093842D /* DenverPlacemark */,
-				F42EDB5D2133692D0093842D /* SamplePlacemarks.swift */,
-			);
-			path = SampleData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,7 +258,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F42EDB612133695A0093842D /* DenverPlacemark in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,7 +281,6 @@
 			files = (
 				F4E57B3F2145B70F00B4D5B3 /* ZipCodeTests.swift in Sources */,
 				F42EDB192133585A0093842D /* SearchParametersTests.swift in Sources */,
-				F42EDB5F2133692D0093842D /* SamplePlacemarks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
