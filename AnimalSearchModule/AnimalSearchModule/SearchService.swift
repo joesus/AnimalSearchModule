@@ -8,6 +8,8 @@
 
 import AnimalData
 
-public protocol SearchService {
-    func search(with parameters: SearchParameters) -> [AnimalData]
+public protocol SearchService: class {
+    typealias AnimalSearchResultsHandler = (Result<[Animal]>) -> Void
+
+    func loadNextPage(completion: AnimalSearchResultsHandler)
 }
