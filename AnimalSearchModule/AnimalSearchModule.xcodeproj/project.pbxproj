@@ -18,6 +18,7 @@
 		F4E57B412145B75C00B4D5B3 /* ZipCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E57B402145B75C00B4D5B3 /* ZipCode.swift */; };
 		F4E57B472145BC4A00B4D5B3 /* PaginationCursorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E57B462145BC4A00B4D5B3 /* PaginationCursorTests.swift */; };
 		F4E57B492145BC9E00B4D5B3 /* PaginationCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E57B482145BC9E00B4D5B3 /* PaginationCursor.swift */; };
+		F4E57B4B2145C15E00B4D5B3 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E57B4A2145C15E00B4D5B3 /* Result.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		F4E57B402145B75C00B4D5B3 /* ZipCode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ZipCode.swift; sourceTree = "<group>"; };
 		F4E57B462145BC4A00B4D5B3 /* PaginationCursorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationCursorTests.swift; sourceTree = "<group>"; };
 		F4E57B482145BC9E00B4D5B3 /* PaginationCursor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaginationCursor.swift; sourceTree = "<group>"; };
+		F4E57B4A2145C15E00B4D5B3 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 				F42EDB01213357BA0093842D /* AnimalSearchModule.h */,
 				F42EDB02213357BA0093842D /* Info.plist */,
 				F4E57B482145BC9E00B4D5B3 /* PaginationCursor.swift */,
+				F4E57B4A2145C15E00B4D5B3 /* Result.swift */,
 				F42EDB2A21335A670093842D /* SearchParameters.swift */,
 				F42EDB2E21335C6A0093842D /* SearchService.swift */,
 				F42EDB30213361A90093842D /* SearchServiceFactory.swift */,
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E57B4B2145C15E00B4D5B3 /* Result.swift in Sources */,
 				F42EDB2B21335A670093842D /* SearchParameters.swift in Sources */,
 				F42EDB31213361A90093842D /* SearchServiceFactory.swift in Sources */,
 				F4E57B412145B75C00B4D5B3 /* ZipCode.swift in Sources */,
