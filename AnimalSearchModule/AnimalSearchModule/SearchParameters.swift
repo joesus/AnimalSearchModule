@@ -8,7 +8,7 @@
 
 import AnimalData
 
-public struct SearchParameters {
+public struct SearchParameters: Equatable {
     public let zipCode: ZipCode
     public let species: Species?
 

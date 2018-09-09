@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct PaginationCursor {
+public struct PaginationCursor: Equatable {
     public let size: Int
     public let index: Int
 
