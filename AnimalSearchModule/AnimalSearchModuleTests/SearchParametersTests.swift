@@ -24,9 +24,16 @@ class SearchParametersTests: XCTestCase {
         )
     }
 
+    func testSpeciesNotRequired() {
+        parameters = SearchParameters(zipCode: zipCode)
+
+        XCTAssertNil(parameters.species,
+                     "Search parameters do not require a species")
+    }
+
     func testSpecies() {
         XCTAssertEqual(parameters.species, .dog,
-                       "Search parameters interface requires a species")
+                       "Search parameters may include a species")
     }
 
     func testZipCode() {

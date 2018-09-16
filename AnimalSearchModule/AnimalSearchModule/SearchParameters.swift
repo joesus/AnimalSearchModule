@@ -12,7 +12,7 @@ public struct SearchParameters: Equatable {
     public let zipCode: ZipCode
     public let species: Species?
 
-    public init(zipCode: ZipCode, species: Species) {
+    public init(zipCode: ZipCode, species: Species? = nil) {
         self.zipCode = zipCode
         self.species = species
     }
