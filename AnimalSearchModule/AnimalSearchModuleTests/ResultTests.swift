@@ -15,6 +15,24 @@ class ResultTests: XCTestCase {
     let error = NSError(domain: "foo", code: 14, userInfo: nil)
     var result: Result<String>!
 
+    func testIndicatingSuccessOrFailureForSuccess() {
+        result = .success(value)
+        XCTAssertTrue(result.isSuccess, "Successes should indicate success status")
+        XCTAssertFalse(result.isFailure, "Successes should not indicate failure status")
+    }
+
+    func testIndicatingSuccessOrFailureForFailureWithError() {
+        result = .failure(error)
+        XCTAssertFalse(result.isSuccess, "Failures should not indicate success status")
+        XCTAssertTrue(result.isFailure, "Failure should indicate failure status")
+    }
+
+    func testIndicatingSuccessOrFailureForFailureWithoutError() {
+        result = .failure(nil)
+        XCTAssertFalse(result.isSuccess, "Failures should not indicate success status")
+        XCTAssertTrue(result.isFailure, "Failure should indicate failure status")
+    }
+
     func testRetrievingValueFromSuccess() {
         result = .success(value)
         XCTAssertEqual(result.value, value,
