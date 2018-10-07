@@ -11,5 +11,5 @@ import AnimalData
 public protocol SearchService: class {
     typealias AnimalSearchResultsHandler = (Result<[Animal]>) -> Void
 
-    func loadNextPage(completion: AnimalSearchResultsHandler)
+    func loadNextPage(completion: @escaping AnimalSearchResultsHandler)
 }
